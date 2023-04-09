@@ -22,13 +22,14 @@ const About = () => {
     <Stack
       justifyContent="center"
       alignItems="center"
+      minHeight="90vh"
       gap={4}
+      p="34px"
       sx={{
         flexDirection: {
           sm: "column",
           md: "row",
         },
-        p: "38px",
       }}
     >
       {/* Details */}

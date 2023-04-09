@@ -14,7 +14,7 @@ const Work = () => {
   }, [selectedTag])
 
   return (
-    <Stack gap={4} p="38px">
+    <Stack minHeight="100vh" gap={4} p="34px">
       {/* Heading */}
       <Typography variant="h4" textAlign="center" fontWeight={600}>
         <span style={{ color: "#FF793E" }}>Portfolio</span> Section
