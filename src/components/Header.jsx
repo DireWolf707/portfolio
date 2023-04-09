@@ -31,6 +31,7 @@ const Header = () => {
         p: "38px",
       }}
     >
+      {/* Details */}
       <Stack
         gap={3}
         sx={{
@@ -40,6 +41,7 @@ const Header = () => {
           },
         }}
       >
+        {/* Welcome Bar */}
         <Stack
           gap={2}
           sx={{
@@ -57,7 +59,7 @@ const Header = () => {
             Download CV
           </Button>
         </Stack>
-
+        {/* Intro */}
         <Typography
           variant="h2"
           fontWeight={600}
@@ -71,12 +73,12 @@ const Header = () => {
         >
           Hi! I'm Rahul <span ref={textRef} />
         </Typography>
-
+        {/* Bio */}
         <Typography variant="body1" color="#D2EFFF">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, officiis quas? Quis, voluptatibus sed repellat consequuntur
           asperiores ea exercitationem ipsum magni rerum culpa, voluptates temporibus saepe deserunt! Atque, minima voluptatem.
         </Typography>
-
+        {/* Connect Link */}
         <Link href="#" underline="none">
           <Stack flexDirection="row" alignItems="center" gap={0.8}>
             <Typography fontWeight={600} color="#FF793E">
@@ -86,7 +88,7 @@ const Header = () => {
           </Stack>
         </Link>
       </Stack>
-
+      {/* Wolf Image */}
       <Box component="img" src="/header/wolf-howl.png" height="460px" width="460px" />
     </Stack>
   )
