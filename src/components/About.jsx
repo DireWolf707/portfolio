@@ -24,7 +24,7 @@ const About = () => {
       alignItems="center"
       minHeight="90vh"
       gap={4}
-      p="34px"
+      px="34px"
       sx={{
         flexDirection: {
           sm: "column",

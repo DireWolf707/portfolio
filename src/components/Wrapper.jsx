@@ -5,7 +5,7 @@ import { navHeight } from "../utils/constants"
 const Wrapper = ({ children, id }) => {
   return (
     <>
-      <Box height={navHeight} id={id} />
+      <Box height={navHeight} id={id} mb="12px" />
       {children}
     </>
   )
