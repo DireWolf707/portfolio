@@ -41,7 +41,7 @@ const Work = () => {
 
             <Stack gap={0.5} width="220px" mx="auto">
               <Typography textAlign="center" fontWeight={600} color="#1d1160">
-                {project.title}
+                {project.name}
               </Typography>
 
               <Typography variant="subtitle2" textAlign="center" fontWeight={400} color="#1d1160">
