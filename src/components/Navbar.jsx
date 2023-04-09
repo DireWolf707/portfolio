@@ -14,6 +14,7 @@ const Navbar = ({ setOpen, navHeight = "96px" }) => {
         alignItems="center"
         sx={{
           position: "fixed",
+          zIndex: 1,
           height: navHeight,
           width: "100%",
           bgcolor: "rgba(0,0,0,0.4)",
