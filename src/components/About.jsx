@@ -89,7 +89,7 @@ const About = () => {
         </Link>
       </Stack>
       {/* Wolf Image */}
-      <Box component="img" src="/header/wolf-howl.png" height="460px" width="460px" />
+      <Box component="img" src="/about/wolf-howl.png" height="460px" width="460px" />
     </Stack>
   )
 }
