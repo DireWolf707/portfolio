@@ -3,7 +3,7 @@ import { Navbar, Header, About, Skills, Work, Sidebar } from "./components"
 import { Stack } from "@mui/material"
 
 const App = () => {
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
 
   return (
     <Stack
