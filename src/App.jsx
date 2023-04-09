@@ -9,6 +9,7 @@ const App = () => {
     <Stack
       sx={{
         background: "linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(0,0,149,1) 50%, rgba(0,129,255,1) 100%)",
+        overflow:"hidden"
       }}
     >
       <Sidebar open={open} setOpen={setOpen} />

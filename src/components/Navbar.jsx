@@ -16,8 +16,7 @@ const Navbar = ({ setOpen, navHeight = "96px" }) => {
           position: "fixed",
           height: navHeight,
           width: "100%",
-          borderBottom: "3px white solid",
-          bgcolor: "rgba(0,0,0,0.2)",
+          bgcolor: "rgba(0,0,0,0.4)",
           backdropFilter: "blur(3px)",
           px: {
             xs: "12px",
