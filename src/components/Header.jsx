@@ -10,7 +10,7 @@ const Header = () => {
     const typed = new Typed(textRef.current, {
       strings: ["Backend Developer", "Frontend Developer", "Database Developer", "Blockchain Developer"],
       typeSpeed: 40,
-      // loop: true,
+      loop: true,
       backSpeed: 40,
       backDelay: 1500,
     })
