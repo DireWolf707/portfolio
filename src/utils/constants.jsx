@@ -1,33 +1,35 @@
-import HomeIcon from "@mui/icons-material/Home"
 import InfoIcon from "@mui/icons-material/Info"
 import WorkIcon from "@mui/icons-material/Work"
 import CodeIcon from "@mui/icons-material/Code"
 import ContactPageIcon from "@mui/icons-material/ContactPage"
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth"
+
+export const navHeight = "96px"
 
 export const navLinks = [
   {
-    title: "HOME",
-    href: "#",
-    icon: <HomeIcon />,
-  },
-  {
     title: "ABOUT",
-    href: "#",
+    href: "#about",
     icon: <InfoIcon />,
   },
   {
     title: "WORK",
-    href: "#",
+    href: "#work",
     icon: <WorkIcon />,
   },
   {
     title: "SKILLS",
-    href: "#",
+    href: "#skills",
     icon: <CodeIcon />,
   },
   {
+    title: "EXPERIENCE",
+    href: "#experience",
+    icon: <CalendarMonthIcon />,
+  },
+  {
     title: "CONTACT",
-    href: "#",
+    href: "#contact",
     icon: <ContactPageIcon />,
   },
 ]
