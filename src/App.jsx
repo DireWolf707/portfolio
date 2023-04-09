@@ -1,8 +1,23 @@
-import React from 'react'
+import React, { useState } from "react"
+import { Navbar, Header, About, Skills, Work, Sidebar } from "./components"
+import { Stack } from "@mui/material"
 
 const App = () => {
+  const [open, setOpen] = useState(true)
+
   return (
-    <div>App</div>
+    <Stack
+      sx={{
+        background: "linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(0,0,149,1) 50%, rgba(0,129,255,1) 100%)",
+      }}
+    >
+      <Sidebar open={open} setOpen={setOpen} />
+      <Navbar setOpen={setOpen} />
+      <Header />
+      <About />
+      <Skills />
+      <Work />
+    </Stack>
   )
 }
 
