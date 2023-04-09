@@ -19,9 +19,8 @@ const Skills = () => {
 
             <Stack flexWrap="wrap" justifyContent="center" gap={1.5} sx={{ flexDirection: { xs: "row", lg: "column" } }}>
               {skill.techs.map((tech, idx) => (
-                <Tooltip title={tech.name} arrow>
+                <Tooltip key={idx} title={tech.name} arrow>
                   <Box
-                    key={idx}
                     component="img"
                     src={tech.image}
                     alt={tech.name}
