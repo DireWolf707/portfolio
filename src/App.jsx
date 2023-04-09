@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Navbar, About, Skills, Work, Sidebar } from "./components"
+import { Navbar, About, Skills, Work, Sidebar, Experience, Contact } from "./components"
 import { Stack } from "@mui/material"
 
 const App = () => {
@@ -17,6 +17,8 @@ const App = () => {
       <About />
       <Work />
       <Skills />
+      <Experience />
+      <Contact />
     </Stack>
   )
 }
