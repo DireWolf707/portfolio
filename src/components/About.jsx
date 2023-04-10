@@ -76,7 +76,10 @@ const About = () => {
           Hi! I'm Rahul <span ref={textRef} />
         </Typography>
         {/* Bio */}
-        <Typography variant="body1" color="#D2EFFF">
+        <Typography 
+        fontFamily="Righteous"
+        fontSize="19px"
+        color="#D2EFFF">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, officiis quas? Quis, voluptatibus sed repellat consequuntur
           asperiores ea exercitationem ipsum magni rerum culpa, voluptates temporibus saepe deserunt! Atque, minima voluptatem.
         </Typography>

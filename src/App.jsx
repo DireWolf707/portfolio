@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Navbar, About, Skills, Work, Sidebar, Experience, Contact } from "./components"
+import { Navbar, Sidebar, About, Work, Skills, Experience, Contact } from "./components"
 import { Stack } from "@mui/material"
 
 const App = () => {
