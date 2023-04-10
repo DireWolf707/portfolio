@@ -1,6 +1,7 @@
 import React from "react"
 import { Stack, Typography, Box, Tooltip } from "@mui/material"
 import { skills } from "../utils/constants"
+import Wrapper from "./Wrapper"
 
 const Skills = () => {
   return (
@@ -38,4 +39,4 @@ const Skills = () => {
   )
 }
 
-export default Skills
+export default Wrapper(Skills, "skills")

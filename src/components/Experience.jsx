@@ -1,5 +1,6 @@
 import React from "react"
 import { Stack, Typography } from "@mui/material"
+import Wrapper from "./Wrapper"
 
 const Experience = () => {
   return (
@@ -12,4 +13,4 @@ const Experience = () => {
   )
 }
 
-export default Experience
+export default Wrapper(Experience, "experience")

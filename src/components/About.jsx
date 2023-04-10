@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react"
 import { Stack, Box, Typography, Link, Button } from "@mui/material"
 import ArrowCircleRightOutlinedIcon from "@mui/icons-material/ArrowCircleRightOutlined"
 import Typed from "typed.js"
+import Wrapper from "./Wrapper"
 
 const About = () => {
   const textRef = useRef(null)
@@ -95,4 +96,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Wrapper(About, "about")

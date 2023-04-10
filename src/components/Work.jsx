@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { Stack, Typography, Button, Paper, Box } from "@mui/material"
 import { workTagsArray, workTags, projects } from "../utils/constants"
+import Wrapper from "./Wrapper"
 
 const Work = () => {
   const [selectedTag, setSelectedTag] = useState(workTags.all)
@@ -55,4 +56,4 @@ const Work = () => {
   )
 }
 
-export default Work
+export default Wrapper(Work, "work")

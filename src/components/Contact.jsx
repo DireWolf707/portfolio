@@ -1,5 +1,6 @@
 import React from "react"
 import { Stack, Typography } from "@mui/material"
+import Wrapper from "./Wrapper"
 
 const Contact = () => {
   return (
@@ -12,4 +13,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Wrapper(Contact, "contact")
