@@ -1,5 +1,5 @@
 import InfoIcon from "@mui/icons-material/Info"
-import WorkIcon from "@mui/icons-material/Work"
+import TerminalIcon from '@mui/icons-material/Terminal';
 import CodeIcon from "@mui/icons-material/Code"
 import ContactPageIcon from "@mui/icons-material/ContactPage"
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth"
@@ -15,7 +15,7 @@ export const navLinks = [
   {
     title: "WORK",
     href: "#work",
-    icon: <WorkIcon />,
+    icon: <TerminalIcon />,
   },
   {
     title: "SKILLS",
