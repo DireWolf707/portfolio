@@ -6,7 +6,7 @@ const Wrapper = (Children, id) => () => {
   return (
     <>
       <Box height={navHeight} id={id} mb="10px" />
-      <Stack minHeight="87.5vh">
+      <Stack minHeight="87.5vh" px="34px">
         <Children />
       </Stack>
     </>

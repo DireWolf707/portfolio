@@ -20,7 +20,7 @@ const About = () => {
   }, [])
 
   return (
-    <Stack flexGrow={1} justifyContent="center" alignItems="center" gap={4} px="34px" sx={{ flexDirection: { sm: "column", md: "row" } }}>
+    <Stack flexGrow={1} justifyContent="center" alignItems="center" gap={4} sx={{ flexDirection: { sm: "column", md: "row" } }}>
       {/* Details */}
       <Stack gap={3} sx={{ width: { xs: "320px", sm: "520px" } }}>
         {/* Welcome Bar */}

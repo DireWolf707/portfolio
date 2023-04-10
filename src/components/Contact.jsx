@@ -6,7 +6,7 @@ import { contacts } from "../utils/constants"
 
 const Contact = () => {
   return (
-    <Stack gap={4} px="34px" mb="36px">
+    <Stack gap={4} mb="36px">
       {/* Heading */}
       <Heading title="Contact" />
       {/* Contact List */}

@@ -10,7 +10,7 @@ import "react-vertical-timeline-component/style.min.css"
 
 const Experience = () => {
   return (
-    <Stack gap={4} px="34px">
+    <Stack gap={4}>
       {/* Heading */}
       <Heading title="Experience" />
       {/* TimeLine */}

@@ -16,7 +16,7 @@ const Work = () => {
   }, [selectedTag])
 
   return (
-    <Stack gap={4} px="34px">
+    <Stack gap={4}>
       {/* Heading */}
       <Heading title="Work" />
       {/* Tag button group */}

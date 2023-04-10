@@ -6,7 +6,7 @@ import Wrapper from "./Wrapper"
 
 const Skills = () => {
   return (
-    <Stack gap={4} px="34px">
+    <Stack gap={4}>
       {/* Heading */}
       <Heading title="Skills" />
       {/* Skills */}
