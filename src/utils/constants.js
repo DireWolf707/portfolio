@@ -1,8 +1,11 @@
 import InfoIcon from "@mui/icons-material/Info"
-import TerminalIcon from '@mui/icons-material/Terminal';
+import TerminalIcon from "@mui/icons-material/Terminal"
 import CodeIcon from "@mui/icons-material/Code"
 import ContactPageIcon from "@mui/icons-material/ContactPage"
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth"
+import SchoolIcon from "@mui/icons-material/School"
+import LaptopChromebookIcon from "@mui/icons-material/LaptopChromebook"
+import WorkIcon from "@mui/icons-material/Work"
 
 export const navHeight = "12.5vh"
 
@@ -145,5 +148,123 @@ export const skills = [
       { name: "Scrapy", image: "/skills/misc/scrapy.png" },
       { name: "Selenium", image: "/skills/misc/selenium.svg" },
     ],
+  },
+]
+
+export const experienceTypes = {
+  work: "work",
+  education: "education",
+  coding: "coding",
+}
+
+export const experienceMetadata = {
+  [experienceTypes.work]: {
+    icon: WorkIcon,
+    iconStyle: { background: "rgb(0,0,180)" },
+    contentStyle: { background: "rgb(0,0,180)" },
+    contentArrowStyle: { borderRight: "7px solid rgb(0,0,180)" },
+  },
+  [experienceTypes.coding]: {
+    icon: LaptopChromebookIcon,
+    iconStyle: { background: "rgb(0,80,80)" },
+    contentStyle: { background: "rgb(0,80,80)" },
+    contentArrowStyle: { borderRight: "7px solid rgb(0,80,80)" },
+  },
+  [experienceTypes.education]: {
+    icon: SchoolIcon,
+    iconStyle: { background: "rgb(200,0,0)" },
+    contentStyle: { background: "rgb(200,0,0)" },
+    contentArrowStyle: { borderRight: "7px solid rgb(200,0,0)" },
+  },
+}
+
+export const experiences = [
+  /* template
+  {
+    title: "Creative Director",
+    subTitle: "Miami, FL",
+    description: ["Lorem ipsum dolor, sit amet",],
+    type: experienceTypes.work,
+    date: "",
+    link: {
+      name: "heheh",
+      href: "",
+    },
+  },
+  */
+  {
+    title: "Gate 2023",
+    subTitle: "CBT organized by the Indian Institute of Technology Kanpur",
+    description: ["scored AIR 3168"],
+    type: experienceTypes.education,
+    date: "Feb 2023",
+  },
+  {
+    title: "Project Intern",
+    subTitle: "Delhi Secretariat (IT Department)",
+    description: ["Completed a mentored project on 'Web development with database connectivity'."],
+    type: experienceTypes.work,
+    date: "Jul 19 - Sep 9, 2022",
+  },
+  {
+    title: "Filecoin Next Step Microgrant",
+    description: ["Awarded with a grant to continue work on the open source project made using IPFS/ Filecoin during Electrothon 4.0."],
+    type: experienceTypes.coding,
+    date: "July 2022",
+    link: {
+      name: "Project Proposal",
+      href: "https://github.com/filecoin-project/devgrants/issues/707",
+    },
+  },
+  {
+    title: "Electrothon 4.0",
+    subTitle: "Hackathon organized by SPEC, NIT Hamirpur",
+    description: [
+      "Won 'Best use of IPFS and/or Filecoin'",
+      "Built a better decentralized storage solution using IPFS, Moralis and Svelte (Frontend)",
+    ],
+    type: experienceTypes.coding,
+    date: "Feb 19-20, 2022",
+    link: {
+      name: "Project Details",
+      href: "https://devfolio.co/projects/decentralized-dropbox-db03",
+    },
+  },
+  {
+    title: "Cloud Native Hackathon",
+    subTitle: "Hackathon organized by Community Classroom (Kunal Kushwaha)",
+    description: [
+      "Won first prize in 'Best use of Symbl.ai'",
+      "Integrated 3 third-party APIs/SDK including Twilio, Symbl.ai, & Alan.ai",
+      "Built a better customer support system using Django, FastAPI, Redis, PostgreSQL, and Javascript (Frontend)",
+    ],
+    type: experienceTypes.coding,
+    date: "Dec 10-12, 2021",
+    link: {
+      name: "Project Details",
+      href: "https://devpost.com/software/customer-support-crm",
+    },
+  },
+  {
+    title: "Exam AZ-900: Microsoft Azure Fundamentals",
+    description: ["Gained foundational level knowledge of cloud services and how those services are provided with Microsoft Azure"],
+    type: experienceTypes.coding,
+    date: "May 17, 2021",
+    link: {
+      name: "Certificate",
+      href: "https://www.credly.com/badges/343b6f7a-422b-4fb0-890b-6fe76900c120/public_url",
+    },
+  },
+  {
+    title: "CBSE Board XII",
+    description: ["scored 96.8% (Science)"],
+    type: experienceTypes.education,
+    date: "2020",
+  },
+  {
+    title: "CBSE Board X",
+    description: ["scored 92%"],
+    type: experienceTypes.education,
+    date: "2018",
   },
 ]
