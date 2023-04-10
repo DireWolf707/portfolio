@@ -1,8 +1,10 @@
 import React, { useRef, useEffect } from "react"
 import { Stack, Box, Typography, Link, Button } from "@mui/material"
+import { motion } from "framer-motion"
 import ArrowCircleRightOutlinedIcon from "@mui/icons-material/ArrowCircleRightOutlined"
 import Typed from "typed.js"
 import Wrapper from "./Wrapper"
+import { wolfAnimation } from "../utils/animations"
 
 const About = () => {
   const textRef = useRef(null)
@@ -53,7 +55,9 @@ const About = () => {
         </Link>
       </Stack>
       {/* Wolf Image */}
-      <Box component="img" src="/about/wolf-howl.png" height="460px" width="460px" />
+      <Box component={motion.div} animate={wolfAnimation}>
+        <Box component="img" src="/about/wolf-howl.png" height="460px" width="460px" />
+      </Box>
     </Stack>
   )
 }
