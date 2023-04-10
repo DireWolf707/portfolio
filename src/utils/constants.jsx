@@ -4,7 +4,7 @@ import CodeIcon from "@mui/icons-material/Code"
 import ContactPageIcon from "@mui/icons-material/ContactPage"
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth"
 
-export const navHeight = "96px"
+export const navHeight = "12.5vh"
 
 export const navLinks = [
   {
@@ -56,19 +56,19 @@ export const projects = [
   },
   {
     name: "ABC",
-    image: "/assets/wolf.svg",
+    image: "/about/wolf-howl.png",
     description: "lorem lorem lorem lorem lorem",
     tags: [workTags.frontend],
   },
   {
     name: "ABC",
-    image: "/assets/wolf.svg",
+    image: "/about/wolf-howl.png",
     description: "lorem lorem lorem lorem lorem",
     tags: [workTags.backend],
   },
   {
     name: "ABC",
-    image: "/assets/wolf.svg",
+    image: "/about/wolf-howl.png",
     description: "lorem lorem lorem lorem lorem",
     tags: [workTags.database],
   },

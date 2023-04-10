@@ -7,9 +7,12 @@ import "./index.css"
 
 const theme = createTheme({
   palette: {
-    my: {
-      dark: blue[50],
-      main: "white",
+    btn1: {
+      main: blue[300],
+    },
+    btn2: {
+      main: "#fff",
+      dark: red[50],
       contrastText: red[400],
     },
   },

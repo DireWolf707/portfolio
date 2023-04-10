@@ -4,7 +4,7 @@ import { skills } from "../utils/constants"
 
 const Skills = () => {
   return (
-    <Stack minHeight="100vh" gap={4} px="34px">
+    <Stack gap={4} px="34px">
       {/* Heading */}
       <Typography variant="h4" textAlign="center" fontWeight={600}>
         <span style={{ color: "#FF793E" }}>Skills</span> Section
@@ -13,7 +13,7 @@ const Skills = () => {
       <Stack justifyContent="center" gap={4} sx={{ flexDirection: { xs: "column", lg: "row" } }}>
         {skills.map((skill, idx) => (
           <Stack key={idx} gap={2} alignItems="center">
-            <Typography color="#00FFFF" variant="h6">
+            <Typography color="#F0CAA3" variant="h6">
               {skill.name}
             </Typography>
 

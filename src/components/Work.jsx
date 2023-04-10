@@ -14,7 +14,7 @@ const Work = () => {
   }, [selectedTag])
 
   return (
-    <Stack minHeight="100vh" gap={4} px="34px">
+    <Stack gap={4} px="34px">
       {/* Heading */}
       <Typography variant="h4" textAlign="center" fontWeight={600}>
         <span style={{ color: "#FF793E" }}>Portfolio</span> Section
@@ -27,7 +27,7 @@ const Work = () => {
             onClick={() => setSelectedTag(tag)}
             variant="contained"
             size="small"
-            color={selectedTag === tag ? "error" : "my"}
+            color={selectedTag === tag ? "error" : "btn2"}
           >
             {tag}
           </Button>
@@ -40,11 +40,11 @@ const Work = () => {
             <Box component="img" src={project.image} height="280px" width="260px" sx={{ bgcolor: "#FF793E", borderRadius: "10px" }} />
 
             <Stack gap={0.5} width="220px" mx="auto">
-              <Typography textAlign="center" fontWeight={600} color="#1d1160">
+              <Typography textAlign="center" fontWeight={600} color="#070A52">
                 {project.name}
               </Typography>
 
-              <Typography variant="subtitle2" textAlign="center" fontWeight={400} color="#1d1160">
+              <Typography variant="subtitle2" textAlign="center" fontWeight={400} color="#070A52">
                 {project.description}
               </Typography>
             </Stack>

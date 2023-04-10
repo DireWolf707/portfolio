@@ -20,9 +20,9 @@ const About = () => {
 
   return (
     <Stack
+      flexGrow={1}
       justifyContent="center"
       alignItems="center"
-      minHeight="90vh"
       gap={4}
       px="34px"
       sx={{
@@ -56,7 +56,7 @@ const About = () => {
             Welcome to my Portfolio
           </Typography>
 
-          <Button variant="outlined" color="error" sx={{ color: "#D2EFFF", borderColor: "#D2EFFF" }}>
+          <Button href="/assets/CV.pdf" target="_blank" variant="outlined" color="btn1">
             Download CV
           </Button>
         </Stack>
@@ -80,7 +80,7 @@ const About = () => {
           asperiores ea exercitationem ipsum magni rerum culpa, voluptates temporibus saepe deserunt! Atque, minima voluptatem.
         </Typography>
         {/* Connect Link */}
-        <Link href="#" underline="none">
+        <Link href="#contact" underline="none">
           <Stack flexDirection="row" alignItems="center" gap={0.8}>
             <Typography fontWeight={600} color="#FF793E">
               Let's Connect

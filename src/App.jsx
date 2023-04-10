@@ -17,7 +17,7 @@ const App = () => {
   return (
     <Stack
       sx={{
-        background: "linear-gradient(180deg, rgba(0,0,8,1) 0%, rgba(0,0,148,1) 100%)",
+        background: "rgba(0,0,75)",
         overflow: "hidden",
       }}
     >
