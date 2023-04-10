@@ -39,8 +39,8 @@ const Experience = () => {
                 )}
 
                 <Box component="ul">
-                  {experience.description.map((point) => (
-                    <Typography component="li" fontFamily="Alkatra">
+                  {experience.description.map((point, idx) => (
+                    <Typography key={idx} component="li" fontFamily="Alkatra">
                       {point}
                     </Typography>
                   ))}
