@@ -16,7 +16,7 @@ const Skills = () => {
             <Typography
               fontFamily="Righteous"
               fontSize="22px"
-              color="#F0CAA3"
+              color="#D2EFFF"
             >
               {skill.name}
             </Typography>

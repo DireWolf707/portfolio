@@ -34,8 +34,8 @@ const Navbar = ({ setOpen }) => {
         <Stack flexDirection="row" gap={2}>
           {navLinks.map((link, idx) => (
             <Stack key={idx} flexDirection="row" alignItems="center" gap={0.3}>
-              {link.icon}
-              <Link href={link.href} underline="hover" variant="body2" color="inherit">
+              <link.Icon />
+              <Link href={link.href} underline="hover" fontFamily="Righteous" fontSize="14px" color="inherit">
                 {link.title}
               </Link>
             </Stack>

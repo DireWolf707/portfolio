@@ -29,7 +29,9 @@ const Sidebar = ({ open, setOpen }) => {
         {navLinks.map((link, idx) => (
           <Link key={idx} href={link.href} underline="none" onClick={() => setOpen(false)}>
             <ListItemButton>
-              <ListItemIcon>{link.icon}</ListItemIcon>
+              <ListItemIcon>
+                <link.Icon />
+              </ListItemIcon>
               <ListItemText primary={link.title} />
             </ListItemButton>
           </Link>

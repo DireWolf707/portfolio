@@ -10,27 +10,27 @@ export const navLinks = [
   {
     title: "ABOUT",
     href: "#about",
-    icon: <InfoIcon />,
+    Icon: InfoIcon,
   },
   {
     title: "WORK",
     href: "#work",
-    icon: <TerminalIcon />,
+    Icon: TerminalIcon,
   },
   {
     title: "SKILLS",
     href: "#skills",
-    icon: <CodeIcon />,
+    Icon: CodeIcon,
   },
   {
     title: "EXPERIENCE",
     href: "#experience",
-    icon: <CalendarMonthIcon />,
+    Icon: CalendarMonthIcon,
   },
   {
     title: "CONTACT",
     href: "#contact",
-    icon: <ContactPageIcon />,
+    Icon: ContactPageIcon,
   },
 ]
 
