@@ -20,39 +20,11 @@ const About = () => {
   }, [])
 
   return (
-    <Stack
-      flexGrow={1}
-      justifyContent="center"
-      alignItems="center"
-      gap={4}
-      px="34px"
-      sx={{
-        flexDirection: {
-          sm: "column",
-          md: "row",
-        },
-      }}
-    >
+    <Stack flexGrow={1} justifyContent="center" alignItems="center" gap={4} px="34px" sx={{ flexDirection: { sm: "column", md: "row" } }}>
       {/* Details */}
-      <Stack
-        gap={3}
-        sx={{
-          width: {
-            xs: "320px",
-            sm: "520px",
-          },
-        }}
-      >
+      <Stack gap={3} sx={{ width: { xs: "320px", sm: "520px" } }}>
         {/* Welcome Bar */}
-        <Stack
-          gap={2}
-          sx={{
-            flexDirection: {
-              xs: "column",
-              sm: "row",
-            },
-          }}
-        >
+        <Stack gap={2} sx={{ flexDirection: { xs: "column", sm: "row" } }}>
           <Typography textAlign="center" variant="subtitle2" sx={{ bgcolor: "#FF793E", p: "8px" }}>
             Welcome to my Portfolio
           </Typography>
@@ -62,24 +34,11 @@ const About = () => {
           </Button>
         </Stack>
         {/* Intro */}
-        <Typography
-          variant="h2"
-          fontWeight={600}
-          color="#FF793E"
-          sx={{
-            height: {
-              xs: "270px",
-              sm: "200px",
-            },
-          }}
-        >
+        <Typography variant="h2" fontWeight={600} color="#FF793E" sx={{ height: { xs: "270px", sm: "200px" } }}>
           Hi! I'm Rahul <span ref={textRef} />
         </Typography>
         {/* Bio */}
-        <Typography 
-        fontFamily="Righteous"
-        fontSize="19px"
-        color="#D2EFFF">
+        <Typography fontFamily="Righteous" fontSize="19px" color="#D2EFFF">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, officiis quas? Quis, voluptatibus sed repellat consequuntur
           asperiores ea exercitationem ipsum magni rerum culpa, voluptates temporibus saepe deserunt! Atque, minima voluptatem.
         </Typography>
