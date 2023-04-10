@@ -10,7 +10,7 @@ export const wolfAnimation = {
 }
 
 export const translateRight = {
-  x: [-600, 0],
+  x: [-280, 0],
   opacity: [0, 1],
   transition: {
     duration: 2,
@@ -21,7 +21,7 @@ export const translateRight = {
 
 export const translateRightVariant = {
   initial: {
-    x: -600,
+    x: -280,
     opacity: 0,
   },
   animate: {
@@ -36,7 +36,7 @@ export const translateRightVariant = {
 }
 
 export const translateLeft = {
-  x: [600, 0],
+  x: [280, 0],
   opacity: [0, 1],
   transition: {
     duration: 2,
@@ -47,7 +47,7 @@ export const translateLeft = {
 
 export const translateLeftVariant = {
   initial: {
-    x: 600,
+    x: 280,
     opacity: 0,
   },
   animate: {
@@ -62,7 +62,7 @@ export const translateLeftVariant = {
 }
 
 export const translateDown = {
-  y: [-600, 0],
+  y: [-280, 0],
   opacity: [0, 1],
   transition: {
     duration: 2,
@@ -72,7 +72,7 @@ export const translateDown = {
 }
 
 export const translateUp = {
-  y: [600, 0],
+  y: [280, 0],
   opacity: [0, 1],
   transition: {
     duration: 2,
