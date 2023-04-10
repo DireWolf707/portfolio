@@ -49,6 +49,13 @@ export const translateUp = {
   },
 }
 
+export const blurOut = {
+  opacity: [0, 1],
+  transition: {
+    duration: 0.75,
+  },
+}
+
 // export const heightAnimation = {
 //   height: [0, "auto"],
 //   transition: {
