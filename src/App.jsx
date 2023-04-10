@@ -6,12 +6,7 @@ const App = () => {
   const [open, setOpen] = useState(false)
 
   return (
-    <Stack
-      sx={{
-        background: "rgba(0,0,75)",
-        overflow: "hidden",
-      }}
-    >
+    <Stack sx={{ background: "rgba(0,0,75)", overflow: "hidden" }}>
       <Sidebar open={open} setOpen={setOpen} />
       <Navbar setOpen={setOpen} />
       <About />
