@@ -268,3 +268,34 @@ export const experiences = [
     date: "2018",
   },
 ]
+
+export const contacts = [
+  {
+    image: "/contact/twitter.svg",
+    link: "https://twitter.com/direwolf_707",
+    text: "Twitter",
+  },
+  {
+    image: "/contact/linkedin.svg",
+    link: "https://www.linkedin.com/in/rahulsood707",
+    text: "Linkedin",
+  },
+  {
+    image: "/contact/github.svg",
+    link: "https://github.com/DireWolf707",
+    text: "Github",
+  },
+  {
+    image: "/contact/mail.svg",
+    link: "mailto: rahulsood707@gmail.com",
+    text: "Mail",
+  },
+  {
+    image: "/contact/phone.svg",
+    text: "9958459356",
+  },
+  {
+    image: "/contact/location.svg",
+    text: "East Delhi, India",
+  },
+]
