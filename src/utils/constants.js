@@ -160,9 +160,9 @@ export const experienceTypes = {
 export const experienceMetadata = {
   [experienceTypes.work]: {
     icon: WorkIcon,
-    iconStyle: { background: "rgb(0,0,180)" },
-    contentStyle: { background: "rgb(0,0,180)" },
-    contentArrowStyle: { borderRight: "7px solid rgb(0,0,180)" },
+    iconStyle: { background: "rgb(0,0,150)" },
+    contentStyle: { background: "rgb(0,0,150)" },
+    contentArrowStyle: { borderRight: "7px solid rgb(0,0,150)" },
   },
   [experienceTypes.coding]: {
     icon: LaptopChromebookIcon,
@@ -172,9 +172,9 @@ export const experienceMetadata = {
   },
   [experienceTypes.education]: {
     icon: SchoolIcon,
-    iconStyle: { background: "rgb(200,0,0)" },
-    contentStyle: { background: "rgb(200,0,0)" },
-    contentArrowStyle: { borderRight: "7px solid rgb(200,0,0)" },
+    iconStyle: { background: "rgb(150,0,0)" },
+    contentStyle: { background: "rgb(150,0,0)" },
+    contentArrowStyle: { borderRight: "7px solid rgb(150,0,0)" },
   },
 }
 
