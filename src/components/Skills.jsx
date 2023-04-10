@@ -2,7 +2,7 @@ import React from "react"
 import { Stack, Typography, Box, Tooltip } from "@mui/material"
 import { motion } from "framer-motion"
 import { skills } from "../utils/constants"
-import { blurOut } from "../utils/animations"
+import { blurOutVariant } from "../utils/animations"
 import Heading from "./Heading"
 import Wrapper from "./Wrapper"
 
@@ -21,7 +21,7 @@ const Skills = () => {
             {/* Technologies */}
             <Stack flexWrap="wrap" justifyContent="center" gap={1.5} sx={{ flexDirection: { xs: "row", lg: "column" } }}>
               {skill.techs.map((tech, idx) => (
-                <Box component={motion.div} whileInView={blurOut} viewport={{ once: true }}>
+                <Box component={motion.div} variants={blurOutVariant} initial="initial" whileInView="animate" viewport={{ once: true }}>
                   <Tooltip key={idx} title={tech.name} arrow>
                     <Box
                       component="img"

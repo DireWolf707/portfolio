@@ -19,6 +19,22 @@ export const translateRight = {
   },
 }
 
+export const translateRightVariant = {
+  initial: {
+    x: -600,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 2,
+      type: "spring",
+      bounce: 0.1,
+    },
+  },
+}
+
 export const translateLeft = {
   x: [600, 0],
   opacity: [0, 1],
@@ -26,6 +42,22 @@ export const translateLeft = {
     duration: 2,
     type: "spring",
     bounce: 0.1,
+  },
+}
+
+export const translateLeftVariant = {
+  initial: {
+    x: 600,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 2,
+      type: "spring",
+      bounce: 0.1,
+    },
   },
 }
 
@@ -53,6 +85,18 @@ export const blurOut = {
   opacity: [0, 1],
   transition: {
     duration: 0.75,
+  },
+}
+
+export const blurOutVariant = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      duration: 1,
+    },
   },
 }
 
