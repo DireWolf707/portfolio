@@ -13,11 +13,7 @@ const Skills = () => {
       <Stack justifyContent="center" gap={4} sx={{ flexDirection: { xs: "column", lg: "row" } }}>
         {skills.map((skill, idx) => (
           <Stack key={idx} gap={2} alignItems="center">
-            <Typography
-              fontFamily="Righteous"
-              fontSize="22px"
-              color="#D2EFFF"
-            >
+            <Typography fontFamily="Righteous" fontSize="22px" color="#D2EFFF">
               {skill.name}
             </Typography>
 
@@ -30,7 +26,7 @@ const Skills = () => {
                     alt={tech.name}
                     height="80px"
                     width="80px"
-                    sx={{ bgcolor: "white", borderRadius: "100%", p: "4px" }}
+                    sx={{ bgcolor: "white", border: "4px solid rgba(0,0,0,0.7)", borderRadius: "100%", p: "4px" }}
                   />
                 </Tooltip>
               ))}
