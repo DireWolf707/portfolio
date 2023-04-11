@@ -164,3 +164,14 @@ export const delayChildren = {
     },
   },
 }
+
+export const animateConstants = {
+  initial: "initial",
+  animate: "animate",
+}
+
+export const whileInViewConstants = {
+  initial: "initial",
+  whileInView: "animate",
+  viewport: { once: true },
+}

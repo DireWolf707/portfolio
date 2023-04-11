@@ -4,7 +4,7 @@ import Heading from "./Heading"
 import Wrapper from "./Wrapper"
 import { contacts } from "../utils/constants"
 import { motion } from "framer-motion"
-import { translateLeftVariant, translateRightVariant } from "../utils/animations"
+import { translateLeftVariant, translateRightVariant, whileInViewConstants } from "../utils/animations"
 
 const Contact = () => {
   return (
@@ -17,9 +17,7 @@ const Contact = () => {
           <Stack
             component={motion.div}
             variants={idx % 2 ? translateLeftVariant : translateRightVariant}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
+            {...whileInViewConstants}
             key={idx}
             flexDirection="row"
             alignItems="center"

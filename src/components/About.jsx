@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import ArrowCircleRightOutlinedIcon from "@mui/icons-material/ArrowCircleRightOutlined"
 import Typed from "typed.js"
 import Wrapper from "./Wrapper"
-import { wolfAnimation, translateLeftVariant, translateRightVariant } from "../utils/animations"
+import { wolfAnimation, translateLeftVariant, translateRightVariant, whileInViewConstants, scaleBlurUpVariant } from "../utils/animations"
 
 const About = () => {
   const textRef = useRef(null)
@@ -28,11 +28,9 @@ const About = () => {
         {/* Welcome Bar */}
         <Stack gap={2} sx={{ flexDirection: { xs: "column", sm: "row" } }}>
           <Typography
-            component={motion.div}
-            variants={translateRightVariant}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
+            component={motion.p}
+            variants={scaleBlurUpVariant}
+            {...whileInViewConstants}
             textAlign="center"
             variant="subtitle2"
             bgcolor="#FF793E"
@@ -44,9 +42,7 @@ const About = () => {
           <Button
             component={motion.a}
             variants={translateLeftVariant}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
+            {...whileInViewConstants}
             href="/assets/CV.pdf"
             target="_blank"
             variant="outlined"
@@ -61,11 +57,9 @@ const About = () => {
         </Typography>
         {/* Bio */}
         <Typography
-          component={motion.div}
+          component={motion.p}
           variants={translateRightVariant}
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
+          {...whileInViewConstants}
           fontFamily="Righteous"
           fontSize="19px"
           color="#D2EFFF"
@@ -78,9 +72,7 @@ const About = () => {
           <Stack
             component={motion.div}
             variants={translateLeftVariant}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
+            {...whileInViewConstants}
             flexDirection="row"
             alignItems="center"
             gap={0.8}
