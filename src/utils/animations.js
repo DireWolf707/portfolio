@@ -84,7 +84,7 @@ export const translateUp = {
 export const blurOut = {
   opacity: [0, 1],
   transition: {
-    duration: 0.75,
+    duration: 1,
   },
 }
 
@@ -93,6 +93,47 @@ export const blurOutVariant = {
     opacity: 0,
   },
   animate: {
+    opacity: 1,
+    transition: {
+      duration: 1,
+    },
+  },
+}
+
+export const scaleUp = {
+  scale: [0, 1],
+  transition: {
+    duration: 1,
+  },
+}
+
+export const scaleUpVariant = {
+  initial: {
+    scale: 0,
+  },
+  animate: {
+    scale: 1,
+    transition: {
+      duration: 1,
+    },
+  },
+}
+
+export const scaleBlurUp = {
+  scale: [0, 1],
+  opacity: [0, 1],
+  transition: {
+    duration: 1,
+  },
+}
+
+export const scaleBlurUpVariant = {
+  initial: {
+    scale: 0,
+    opacity: 0,
+  },
+  animate: {
+    scale: 1,
     opacity: 1,
     transition: {
       duration: 1,
