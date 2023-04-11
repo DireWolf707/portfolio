@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import ArrowCircleRightOutlinedIcon from "@mui/icons-material/ArrowCircleRightOutlined"
 import Typed from "typed.js"
 import Wrapper from "./Wrapper"
-import { wolfAnimation, translateLeftVariant, translateRightVariant, whileInViewConstants, scaleBlurUpVariant } from "../utils/animations"
+import { yoyoAnimation, translateLeftVariant, translateRightVariant, whileInViewConstants, scaleBlurUpVariant } from "../utils/animations"
 
 const About = () => {
   const textRef = useRef(null)
@@ -85,7 +85,7 @@ const About = () => {
         </Link>
       </Stack>
       {/* Wolf Image */}
-      <Box component={motion.div} animate={wolfAnimation}>
+      <Box component={motion.div} animate={yoyoAnimation}>
         <Box component="img" src="/about/wolf-howl.png" height="460px" width="460px" />
       </Box>
     </Stack>

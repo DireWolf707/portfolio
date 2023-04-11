@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react"
 import { Stack, Typography, Button, Paper, Box } from "@mui/material"
 import { workTagsArray, workTags, projects } from "../utils/constants"
+import { motion, AnimatePresence } from "framer-motion"
+import { cardAnimationVariant, whileInViewConstants } from "../utils/animations"
 import Heading from "./Heading"
 import Wrapper from "./Wrapper"
 
@@ -35,21 +37,31 @@ const Work = () => {
       </Stack>
       {/* Projects */}
       <Stack flexWrap="wrap" flexDirection="row" justifyContent="center" alignItems="start" gap={2}>
-        {filteredProjects.map((project, idx) => (
-          <Paper key={idx} elevation={10} sx={{ p: "16px" }}>
-            <Box component="img" src={project.image} height="280px" width="260px" sx={{ bgcolor: "#FF793E", borderRadius: "10px" }} />
+        <AnimatePresence mode="popLayout">
+          {filteredProjects.map((project) => (
+            <Paper
+              key={project.name} // unique key!
+              component={motion.div}
+              layout
+              variants={cardAnimationVariant}
+              {...whileInViewConstants}
+              elevation={10}
+              sx={{ p: "16px" }}
+            >
+              <Box component="img" src={project.image} height="280px" width="260px" sx={{ bgcolor: "#FF793E", borderRadius: "10px" }} />
 
-            <Stack gap={0.5} width="220px" mx="auto">
-              <Typography textAlign="center" fontWeight={600} color="#070A52">
-                {project.name}
-              </Typography>
+              <Stack gap={0.5} width="220px" mx="auto">
+                <Typography textAlign="center" fontWeight={600} color="#070A52">
+                  {project.name}
+                </Typography>
 
-              <Typography variant="subtitle2" textAlign="center" fontWeight={400} color="#070A52">
-                {project.description}
-              </Typography>
-            </Stack>
-          </Paper>
-        ))}
+                <Typography variant="subtitle2" textAlign="center" fontWeight={400} color="#070A52">
+                  {project.description}
+                </Typography>
+              </Stack>
+            </Paper>
+          ))}
+        </AnimatePresence>
       </Stack>
     </Stack>
   )

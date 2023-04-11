@@ -52,26 +52,38 @@ export const workTagsArray = Object.values(workTags)
 
 export const projects = [
   {
-    name: "ABC",
+    name: "A",
     image: "/about/wolf-howl.png",
     description: "lorem lorem lorem lorem lorem lorem lorem lorem",
     tags: [workTags.blockchain],
   },
   {
-    name: "ABC",
-    image: "/about/wolf-howl.png",
+    name: "B",
+    image: "/contact/twitter.svg",
     description: "lorem lorem lorem lorem lorem",
     tags: [workTags.frontend],
   },
   {
-    name: "ABC",
-    image: "/about/wolf-howl.png",
+    name: "C",
+    image: "/contact/mail.svg",
     description: "lorem lorem lorem lorem lorem",
     tags: [workTags.backend],
   },
   {
-    name: "ABC",
+    name: "D",
     image: "/about/wolf-howl.png",
+    description: "lorem lorem lorem lorem lorem",
+    tags: [workTags.database],
+  },
+  {
+    name: "E",
+    image: "/about/wolf-howl.png",
+    description: "lorem lorem lorem lorem lorem",
+    tags: [workTags.database],
+  },
+  {
+    name: "F",
+    image: "/contact/github.svg",
     description: "lorem lorem lorem lorem lorem",
     tags: [workTags.database],
   },

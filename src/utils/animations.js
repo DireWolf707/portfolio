@@ -1,4 +1,4 @@
-export const wolfAnimation = {
+export const yoyoAnimation = {
   y: [-16, 16],
   transition: {
     type: "tween",
@@ -7,6 +7,12 @@ export const wolfAnimation = {
     repeatType: "mirror",
     duration: 1.2,
   },
+}
+
+export const cardAnimationVariant = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1, transition: { duration: 0.25 } },
+  exit: { opacity: 0, transition: { duration: 0.25 } },
 }
 
 export const translateRight = {
@@ -168,10 +174,12 @@ export const delayChildren = {
 export const animateConstants = {
   initial: "initial",
   animate: "animate",
+  exit: "exit",
 }
 
 export const whileInViewConstants = {
   initial: "initial",
   whileInView: "animate",
+  exit: "exit",
   viewport: { once: true },
 }
