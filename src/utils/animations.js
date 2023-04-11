@@ -16,10 +16,10 @@ export const cardAnimationVariant = {
 }
 
 export const translateRight = {
-  x: [-280, 0],
+  x: [-240, 0],
   opacity: [0, 1],
   transition: {
-    duration: 2,
+    duration: 1.5,
     type: "spring",
     bounce: 0.1,
   },
@@ -27,14 +27,14 @@ export const translateRight = {
 
 export const translateRightVariant = {
   initial: {
-    x: -280,
+    x: -240,
     opacity: 0,
   },
   animate: {
     x: 0,
     opacity: 1,
     transition: {
-      duration: 2,
+      duration: 1.5,
       type: "spring",
       bounce: 0.1,
     },
@@ -42,10 +42,10 @@ export const translateRightVariant = {
 }
 
 export const translateLeft = {
-  x: [280, 0],
+  x: [240, 0],
   opacity: [0, 1],
   transition: {
-    duration: 2,
+    duration: 1.5,
     type: "spring",
     bounce: 0.1,
   },
@@ -53,14 +53,14 @@ export const translateLeft = {
 
 export const translateLeftVariant = {
   initial: {
-    x: 280,
+    x: 240,
     opacity: 0,
   },
   animate: {
     x: 0,
     opacity: 1,
     transition: {
-      duration: 2,
+      duration: 1.5,
       type: "spring",
       bounce: 0.1,
     },
@@ -68,20 +68,20 @@ export const translateLeftVariant = {
 }
 
 export const translateDown = {
-  y: [-280, 0],
+  y: [-240, 0],
   opacity: [0, 1],
   transition: {
-    duration: 2,
+    duration: 1.5,
     type: "spring",
     bounce: 0.1,
   },
 }
 
 export const translateUp = {
-  y: [280, 0],
+  y: [240, 0],
   opacity: [0, 1],
   transition: {
-    duration: 2,
+    duration: 1.5,
     type: "spring",
     bounce: 0.1,
   },
