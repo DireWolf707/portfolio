@@ -7,7 +7,7 @@ import SchoolIcon from "@mui/icons-material/School"
 import LaptopChromebookIcon from "@mui/icons-material/LaptopChromebook"
 import WorkIcon from "@mui/icons-material/Work"
 
-export const navHeight = "12.5vh"
+export const navHeight = "96px"
 
 export const navLinks = [
   {

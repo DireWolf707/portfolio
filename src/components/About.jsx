@@ -42,7 +42,7 @@ const About = () => {
           </Typography>
 
           <Button
-            component={motion.div}
+            component={motion.a}
             variants={translateLeftVariant}
             initial="initial"
             whileInView="animate"
