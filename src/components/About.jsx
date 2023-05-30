@@ -88,7 +88,7 @@ const About = () => {
       </Stack>
       {/* Wolf Image */}
       <Box component={motion.div} animate={yoyoAnimation}>
-        <Player autoplay loop src="/about/wolf-howling.json" style={{ width: "600px" }} />
+        <Player autoplay keepLastFrame src="/about/wolf-howling.json" style={{ width: "600px" }} />
       </Box>
     </Stack>
   )
