@@ -110,7 +110,7 @@ export const projects = [
     description: [
       "RapidAPI Integration",
       "Search functionality",
-      "Game detail modal with more information and images",
+      "Game detail modal with more info and images",
       "Game grid",
       "Responsive",
     ],
@@ -127,7 +127,7 @@ export const projects = [
       "Popular songs recommendation according to user's location",
       "Category menu",
       "Top Artists/Top Charts page",
-      "Song detail page with artist information and play functionality",
+      "Song detail page with artist info and play functionality",
       "Responsive",
     ],
     tags: [workTags.frontend, workTags.reactjs],
