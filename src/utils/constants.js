@@ -136,7 +136,7 @@ export const projects = [
     title: "Wolfy Thoughts",
     image: "/work/wolfy-thoughts.jpg",
     deployedLink: "https://wolfy-thoughts.vercel.app",
-    subTitle: "public thought sharing",
+    subTitle: "thought sharing",
     description: [
       "Public feed",
       "Text post functionality",
