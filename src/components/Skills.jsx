@@ -1,4 +1,3 @@
-import React from "react"
 import { Stack, Typography, Box, Tooltip } from "@mui/material"
 import { motion } from "framer-motion"
 import { skills } from "../utils/constants"
@@ -21,8 +20,8 @@ const Skills = () => {
             {/* Technologies */}
             <Stack flexWrap="wrap" justifyContent="center" gap={1.5} sx={{ flexDirection: { xs: "row", lg: "column" } }}>
               {skill.techs.map((tech, idx) => (
-                <Box component={motion.div} variants={scaleBlurUpVariant} {...whileInViewConstants}>
-                  <Tooltip key={idx} title={tech.name} arrow>
+                <Box key={idx} component={motion.div} variants={scaleBlurUpVariant} {...whileInViewConstants}>
+                  <Tooltip title={tech.name} arrow>
                     <Box
                       component="img"
                       src={tech.image}
