@@ -56,7 +56,7 @@ const Experience = () => {
           )
         })}
 
-        <VerticalTimelineElement iconStyle={{ background: "rgb(16, 204, 82)" }} icon={<StarIcon />} />
+        <VerticalTimelineElement iconStyle={{ background: "#FE633D" }} icon={<StarIcon />} />
       </VerticalTimeline>
     </Stack>
   )
