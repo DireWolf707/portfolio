@@ -1,10 +1,11 @@
-import React, { useRef, useEffect } from "react"
+import { useRef, useEffect } from "react"
 import { Stack, Box, Typography, Link, Button } from "@mui/material"
 import { motion } from "framer-motion"
 import ArrowCircleRightOutlinedIcon from "@mui/icons-material/ArrowCircleRightOutlined"
 import Typed from "typed.js"
 import Wrapper from "./Wrapper"
 import { yoyoAnimation, translateLeftVariant, translateRightVariant, whileInViewConstants, scaleBlurUpVariant } from "../utils/animations"
+import { Player } from "@lottiefiles/react-lottie-player"
 
 const About = () => {
   const textRef = useRef(null)
@@ -86,7 +87,7 @@ const About = () => {
       </Stack>
       {/* Wolf Image */}
       <Box component={motion.div} animate={yoyoAnimation}>
-        <Box component="img" src="/about/wolf-howl.png" height="460px" width="460px" />
+        <Player autoplay loop src="/about/wolf-howling.json" style={{ height: "600px" }} />
       </Box>
     </Stack>
   )
