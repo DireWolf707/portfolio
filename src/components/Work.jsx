@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { Stack, Typography, Button, Paper, Box } from "@mui/material"
+import { Stack, Typography, Button, Box } from "@mui/material"
 import { workTagsArray, workTags, projects } from "../utils/constants"
 import { motion, AnimatePresence } from "framer-motion"
 import { cardAnimationVariant, whileInViewConstants } from "../utils/animations"
@@ -30,7 +30,7 @@ const Work = () => {
             onClick={() => setSelectedTag(tag)}
             variant="contained"
             size="small"
-            color={selectedTag === tag ? "error" : "btn2"}
+            color={selectedTag === tag ? "btn3" : "btn2"}
           >
             {tag}
           </Button>
@@ -63,12 +63,12 @@ const Work = () => {
               />
 
               <Stack flexDirection="row" gap={0.5} justifyContent="center" alignItems="center">
-                <Typography fontSize="18px" fontWeight={600} fontFamily="Righteous" color="#070A52">
+                <Typography fontSize="18px" fontWeight={600} fontFamily="Righteous" color="#FF793E">
                   {project.title}
                 </Typography>
 
                 <Stack component="a" href={project.deployedLink} target="_blank">
-                  <OpenInNewIcon sx={{ fontSize: "18px", fill: "#000" }} />
+                  <OpenInNewIcon  sx={{ fontSize: "13px", fill: "#070A52" }} />
                 </Stack>
               </Stack>
 
