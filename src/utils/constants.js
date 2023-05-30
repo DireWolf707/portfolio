@@ -342,11 +342,11 @@ export const experiences = [
 ]
 
 export const contacts = [
-  // {
-  //   image: "/contact/twitter.svg",
-  //   link: "https://twitter.com/direwolf_707",
-  //   text: "Twitter",
-  // },
+  {
+    image: "/contact/twitter.svg",
+    link: "https://twitter.com/direwolf_707",
+    text: "Twitter",
+  },
   {
     image: "/contact/linkedin.svg",
     link: "https://www.linkedin.com/in/rahulsood707",
