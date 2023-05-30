@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react"
+import { useState, useEffect } from "react"
 import { Stack, Typography, Button, Paper, Box } from "@mui/material"
 import { workTagsArray, workTags, projects } from "../utils/constants"
 import { motion, AnimatePresence } from "framer-motion"
 import { cardAnimationVariant, whileInViewConstants } from "../utils/animations"
 import Heading from "./Heading"
 import Wrapper from "./Wrapper"
+import OpenInNewIcon from "@mui/icons-material/OpenInNew"
 
 const Work = () => {
   const [selectedTag, setSelectedTag] = useState(workTags.all)
@@ -36,30 +37,63 @@ const Work = () => {
         ))}
       </Stack>
       {/* Projects */}
-      <Stack flexWrap="wrap" flexDirection="row" justifyContent="center" alignItems="start" gap={2}>
+      <Stack flexWrap="wrap" flexDirection="row" justifyContent="center" alignItems="start" gap={3}>
         <AnimatePresence mode="popLayout">
           {filteredProjects.map((project) => (
-            <Paper
-              key={project.name} // unique key!
+            <Stack
+              key={project.title} // unique key!
               component={motion.div}
               layout
               variants={cardAnimationVariant}
               {...whileInViewConstants}
-              elevation={10}
-              sx={{ p: "16px" }}
+              alignItems="center"
+              gap={1.2}
+              bgcolor="#fff"
+              borderRadius="12px"
+              px="12px"
+              pt="12px"
+              pb="18px"
             >
-              <Box component="img" src={project.image} height="280px" width="260px" sx={{ bgcolor: "#FF793E", borderRadius: "10px" }} />
+              <Box
+                component="img"
+                src={project.image}
+                height={{ xs: "100%", sm: "300px" }}
+                width={{ xs: "100%", sm: "400px" }}
+                sx={{ borderRadius: "10px", border: "3px solid #070A52" }}
+              />
 
-              <Stack gap={0.5} width="220px" mx="auto">
-                <Typography textAlign="center" fontWeight={600} color="#070A52">
-                  {project.name}
+              <Stack flexDirection="row" gap={0.5} justifyContent="center" alignItems="center">
+                <Typography fontSize="18px" fontWeight={600} fontFamily="Righteous" color="#070A52">
+                  {project.title}
                 </Typography>
 
-                <Typography variant="subtitle2" textAlign="center" fontWeight={400} color="#070A52">
-                  {project.description}
+                <Stack component="a" href={project.deployedLink} target="_blank">
+                  <OpenInNewIcon sx={{ fontSize: "18px", fill: "#000" }} />
+                </Stack>
+              </Stack>
+
+              <Stack flexDirection="row">
+                <Typography fontSize="16px" fontWeight={500} fontFamily="Alkatra" color="#070A52">
+                  Full fledged
+                </Typography>
+                &nbsp;
+                <Typography fontSize="16px" fontWeight={600} fontFamily="Alkatra" color="#070A52">
+                  {project.subTitle}
+                </Typography>
+                &nbsp;
+                <Typography fontSize="16px" fontWeight={500} fontFamily="Alkatra" color="#070A52">
+                  application
                 </Typography>
               </Stack>
-            </Paper>
+
+              <Box component="ul" maxWidth="60%">
+                {project.description.map((point, idx) => (
+                  <Typography key={idx} component="li" fontSize="14px" fontFamily="Righteous" color="#070A52">
+                    {point}
+                  </Typography>
+                ))}
+              </Box>
+            </Stack>
           ))}
         </AnimatePresence>
       </Stack>
