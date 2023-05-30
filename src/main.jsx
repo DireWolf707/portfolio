@@ -1,4 +1,3 @@
-import React from "react"
 import ReactDOM from "react-dom/client"
 import App from "./App"
 import { createTheme, ThemeProvider } from "@mui/material"
@@ -14,6 +13,11 @@ const theme = createTheme({
       main: "#fff",
       dark: red[50],
       contrastText: red[400],
+    },
+    btn3: {
+      main: "#FF793E",
+      dark: "#E25C22",
+      contrastText: "#fff",
     },
   },
 })
