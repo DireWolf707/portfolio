@@ -25,7 +25,7 @@ const About = () => {
   return (
     <Stack flexGrow={1} justifyContent="center" alignItems="center" gap={4} sx={{ flexDirection: { sm: "column", md: "row" } }}>
       {/* Details */}
-      <Stack gap={3} sx={{ width: { xs: "320px", sm: "520px" } }}>
+      <Stack gap={4} sx={{ width: { xs: "320px", sm: "520px" } }}>
         {/* Welcome Bar */}
         <Stack gap={2} sx={{ flexDirection: { xs: "column", sm: "row" } }}>
           <Typography
@@ -65,8 +65,9 @@ const About = () => {
           fontSize="19px"
           color="#D2EFFF"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, officiis quas? Quis, voluptatibus sed repellat consequuntur
-          asperiores ea exercitationem ipsum magni rerum culpa, voluptates temporibus saepe deserunt! Atque, minima voluptatem.
+          I spent most of my time coding, refactoring and debugging 👨🏻‍💻.
+          <br />
+          In free time I sleep 😴 or play on my PS5 🎮.
         </Typography>
         {/* Connect Link */}
         <Link href="#contact" underline="none">
@@ -87,7 +88,7 @@ const About = () => {
       </Stack>
       {/* Wolf Image */}
       <Box component={motion.div} animate={yoyoAnimation}>
-        <Player autoplay loop src="/about/wolf-howling.json" style={{ height: "600px" }} />
+        <Player autoplay loop src="/about/wolf-howling.json" style={{ width: "600px" }} />
       </Box>
     </Stack>
   )
