@@ -232,9 +232,9 @@ export const experienceTypes = {
 export const experienceMetadata = {
   [experienceTypes.work]: {
     icon: WorkIcon,
-    iconStyle: { background: "rgb(0,0,150)" },
-    contentStyle: { background: "rgb(0,0,150)" },
-    contentArrowStyle: { borderRight: "7px solid rgb(0,0,150)" },
+    iconStyle: { background: "rgb(210,141,32)" },
+    contentStyle: { background: "rgb(210,141,32)" },
+    contentArrowStyle: { borderRight: "7px solid rgb(210,141,32)" },
   },
   [experienceTypes.coding]: {
     icon: LaptopChromebookIcon,
@@ -265,9 +265,9 @@ export const experiences = [
   },
   */
   {
-    title: "Gate 2023",
-    subTitle: "CBT organized by the Indian Institute of Technology Kanpur",
-    description: ["scored AIR 3168"],
+    title: "GATE (CS) 2023",
+    subTitle: "National level exam organized by IISc and 7 IITs",
+    description: ["Scored AIR 3168"],
     type: experienceTypes.education,
     date: "Feb 2023",
   },
@@ -342,11 +342,11 @@ export const experiences = [
 ]
 
 export const contacts = [
-  {
-    image: "/contact/twitter.svg",
-    link: "https://twitter.com/direwolf_707",
-    text: "Twitter",
-  },
+  // {
+  //   image: "/contact/twitter.svg",
+  //   link: "https://twitter.com/direwolf_707",
+  //   text: "Twitter",
+  // },
   {
     image: "/contact/linkedin.svg",
     link: "https://www.linkedin.com/in/rahulsood707",
