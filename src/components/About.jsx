@@ -65,7 +65,7 @@ const About = () => {
           fontSize="19px"
           color="#D2EFFF"
         >
-          I spent most of my time coding, refactoring and debugging 👨🏻‍💻.
+          I spend most of my time coding, refactoring and debugging 👨🏻‍💻.
           <br />
           In free time I sleep 😴 or play on my PS5 🎮.
         </Typography>
