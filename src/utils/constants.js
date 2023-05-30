@@ -39,53 +39,60 @@ export const navLinks = [
 
 export const workTags = {
   all: "all",
+  fullstack: "fullstack",
   frontend: "frontend",
-  backend: "backend",
-  blockchain: "blockchain",
-  database: "database",
-  mern: "mern",
-  django: "django",
+  expressjs: "expressjs",
   reactjs: "reactjs",
+  drizzle: "drizzle",
+  prisma: "prisma",
+  socketio: "socket.io",
 }
 
 export const workTagsArray = Object.values(workTags)
 
 export const projects = [
   {
-    name: "A",
-    image: "/about/wolf-howl.png",
-    description: "lorem lorem lorem lorem lorem lorem lorem lorem",
-    tags: [workTags.blockchain],
+    name: "Wolfy Sky",
+    image: "/work/wolfy-sky.jpg",
+    deployedLink: "https://wolfy-sky.vercel.app",
+    description: "full-fledged",
+    tags: [workTags.fullstack, workTags.socketio, workTags.reactjs, workTags.expressjs, workTags.drizzle],
   },
   {
-    name: "B",
-    image: "/contact/twitter.svg",
-    description: "lorem lorem lorem lorem lorem",
-    tags: [workTags.frontend],
+    name: "Wolf Shop",
+    image: "/work/wolf-shop.jpg",
+    deployedLink: "https://wolf-shop.vercel.app",
+    description: "full-fledged",
+    tags: [workTags.fullstack, workTags.reactjs, workTags.expressjs, workTags.prisma],
   },
   {
-    name: "C",
-    image: "/contact/mail.svg",
-    description: "lorem lorem lorem lorem lorem",
-    tags: [workTags.backend],
+    name: "MediaTube",
+    image: "/work/mediatube.jpg",
+    deployedLink: "https://wolf-mediatube.vercel.app",
+    description: "full-fledged",
+    tags: [workTags.frontend, workTags.reactjs],
+  },
+
+  {
+    name: "IGDB",
+    image: "/work/igdb.jpg",
+    deployedLink: "https://wolf-igdb.vercel.app",
+    description: "full-fledged",
+    tags: [workTags.frontend, workTags.reactjs],
   },
   {
-    name: "D",
-    image: "/about/wolf-howl.png",
-    description: "lorem lorem lorem lorem lorem",
-    tags: [workTags.database],
+    name: "Songify",
+    image: "/work/songify.jpg",
+    deployedLink: "https://wolf-songify.vercel.app",
+    description: "full-fledged",
+    tags: [workTags.frontend, workTags.reactjs],
   },
   {
-    name: "E",
-    image: "/about/wolf-howl.png",
-    description: "lorem lorem lorem lorem lorem",
-    tags: [workTags.database],
-  },
-  {
-    name: "F",
-    image: "/contact/github.svg",
-    description: "lorem lorem lorem lorem lorem",
-    tags: [workTags.database],
+    name: "Wolfy Thoughts",
+    image: "/work/wolfy-thoughts.jpg",
+    deployedLink: "https://wolfy-thoughts.vercel.app",
+    description: "full-fledged",
+    tags: [workTags.fullstack, workTags.socketio, workTags.reactjs, workTags.expressjs, workTags.drizzle],
   },
 ]
 
@@ -96,9 +103,7 @@ export const skills = [
       { name: "Javascript", image: "/skills/language/js.svg" },
       { name: "Python", image: "/skills/language/py.svg" },
       { name: "Solidity", image: "/skills/language/solidity.svg" },
-      { name: "C++", image: "/skills/language/c++.svg" },
-      { name: "Go", image: "/skills/language/go.svg" },
-      { name: "Java", image: "/skills/language/java.svg" },
+      { name: "sql", image: "/skills/language/sql.svg" },
     ],
   },
   {
@@ -128,8 +133,10 @@ export const skills = [
     name: "Database",
     techs: [
       { name: "MongoDB", image: "/skills/database/mongo.svg" },
-      { name: "MySQL", image: "/skills/database/mysql.svg" },
+      { name: "PostgreSQL", image: "/skills/database/postgresql.svg" },
       { name: "Redis", image: "/skills/database/redis.svg" },
+      { name: "DrizzleORM", image: "/skills/database/drizzle.svg" },
+      { name: "PrismaORM", image: "/skills/database/prisma.svg" },
     ],
   },
   {
